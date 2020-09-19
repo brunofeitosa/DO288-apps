@@ -10,6 +10,11 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
+echo "ANTES DE CHAMAR O RAIZ 000000000000000000000000" 
+/usr/libexec/s2i/assemble
+
+echo "DEPOIS DE CHAMAR O RAIZ 11111111111111111111111111"
+
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
 
@@ -23,6 +28,10 @@ echo ">>((((((((((((((((((((((((((%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 DATE2=`date "+%d/%m/%y"`
 
 echo "Se liga na data de hoje $DATE2" >> ./seliga.html
+
+DATE3=`date "%d/%m/%y %t`
+
+echo "Testando nova data $DATE3"  >> ./seliga.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
