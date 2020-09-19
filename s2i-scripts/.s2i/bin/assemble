@@ -29,7 +29,7 @@ DATE2=`date "+%d/%m/%y"`
 
 echo "Se liga na data de hoje $DATE2" >> ./seliga.html
 
-DATE3=`date "%d/%m/%y %t`
+DATE3=`date "%d/%m/%y %t"`
 
 echo "Testando nova data $DATE3"  >> ./seliga.html
 
