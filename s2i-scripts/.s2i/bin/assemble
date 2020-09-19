@@ -10,9 +10,9 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
-echo "ANTES DE CHAMAR O RAIZ 000000000000000000000000" 
 
-echo "DEPOIS DE CHAMAR O RAIZ 11111111111111111111111111"
+
+
 
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./

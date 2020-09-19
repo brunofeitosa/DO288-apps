@@ -1,4 +1,4 @@
-FROM httpd
+FROM httpd-24-rhel7
 COPY ./ /tmp/src 
 COPY ./.s2i/bin/ /usr/libexec/s2i
 RUN chgrp -Rf 0 /tmp/src/ && \
