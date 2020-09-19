@@ -1,6 +1,6 @@
 FROM httpd:2.4
-COPY ./ /tmp/src 
-COPY ./.s2i/bin/ /usr/libexec/s2i
+COPY ./ /tmp/src \
+ ./.s2i/bin/ /usr/libexec/s2i
 RUN chgrp -Rf 0 /tmp/src/ && \
     chmod -Rf g=u /tmp/src/
 USER 1001
